@@ -32,6 +32,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        
     </head>
 
     <body>
@@ -81,9 +82,48 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <footer></footer>
+
+        <section class="w-75 mx-auto">
+            <h3>
+                <span>Q. </span>How to JavaScript Works?
+            </h3>
+            
+            <mark>Ans.</mark>
+            <p>
+                JavaScript run on browser with JS engine. The Chrome Browser used V8 JS engine. The Mozilla used Spider-Monkey and Edge used Chakra JS engine. But it's takes few steps to running on browser.<br>
+                1. It all starts with getting JavaScript code from the network.<br>
+                2. V8 parses the source code and turns it into an Abstract Syntax Tree (AST). <br>
+                3. Based on that AST, the Ignition interpreter can start to do its thing and produce bytecode. <br>
+                4. At that point, the engine starts running the code and collecting type feedback. <br>
+                5. To make it run faster, the byte code can be sent to the optimizing compiler along with feedback data. The optimizing compiler makes certain assumptions based on it and then produces highly-optimized machine code. <br>
+                6. If, at some point, one of the assumptions turns out to be incorrect, the optimizing compiler de-optimizes and goes back to the interpreter.
+            </p>
+            <br>
+            <br>
+            <h3>
+                <span>Q. </span>what is the comparison between Local Storage and Session Storage?
+            </h3>
+
+            <mark>Ans.</mark> 
+            <p>
+                <p>sessionStorage is similar to localStorage</p>
+                <span>The main difference between Local and Session storage is that :</span> <br>
+                <span class="d-block text-info">Local Storage:</span>
+                 While data in localStorage doesn't expire. <br>
+            </p>
+            <p>
+                <span class="d-block text-info">Session Storage:</span>
+                 While data in sessionStorage is cleared when the page session ends. <br>
+            </p>
+        </section>
+
+
+        <footer>
+
+        </footer>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
+
     </body>
 </html>
