@@ -85,19 +85,29 @@
 
         <section class="w-75 mx-auto">
             <h3>
-                <span>Q. </span>How to JavaScript Works?
+                <span>Q. </span>How does JavaScript Works?
             </h3>
             
             <mark>Ans.</mark>
             <p>
                 JavaScript run on browser with JS engine. The Chrome Browser used V8 JS engine. The Mozilla used Spider-Monkey and Edge used Chakra JS engine. But it's takes few steps to running on browser.<br>
-                1. It all starts with getting JavaScript code from the network.<br>
-                2. V8 parses the source code and turns it into an Abstract Syntax Tree (AST). <br>
-                3. Based on that AST, the Ignition interpreter can start to do its thing and produce bytecode. <br>
-                4. At that point, the engine starts running the code and collecting type feedback. <br>
-                5. To make it run faster, the byte code can be sent to the optimizing compiler along with feedback data. The optimizing compiler makes certain assumptions based on it and then produces highly-optimized machine code. <br>
-                6. If, at some point, one of the assumptions turns out to be incorrect, the optimizing compiler de-optimizes and goes back to the interpreter.
+                1. First step is getting JavaScript code from the network.<br>
+                2. V8 / Spider-Monkey / Chakra parses the source code and convert into Abstract Syntax Tree (AST). <br>
+                3. The AST the Ignition interpreter can start to do its thing and produce bytecode. <br>
+                4. At that point, the machine can understand the code and give output.
             </p>
+
+            <br>
+            <br>
+            <h3>
+                <span>Q. </span>What does JavaScript event loop do?
+            </h3>
+
+            <mark>Ans.</mark>
+            <p>
+                The JavaScript code is works syncronously way. machine read the code 1 to 2 this order basis. event loop mainly process the code which are asynchronously run. event loop had 3 parts. there is Stack part is process the code syncronous way. then machine read the asynchronous code with event loop process. Synchronous datas are stored in Stack part. when the machine reads all stack function then machine read the asynchronous data which are stored in Event Queue. There is another part is Heap. All data stored in Heap part.   
+            </p>
+
             <br>
             <br>
             <h3>
